@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "824540184423",
+    "firebase_url": "https://cse489-marketplace-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "cse489-marketplace",
+    "storage_bucket": "cse489-marketplace.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824540184423:android:d99448e5ff5742bcfbb9c2",
+        "android_client_info": {
+          "package_name": "com.example.marketplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824540184423-9paok0s6v43l2lhqflm5k8qlji407uhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQNxlx8_Bh232I4EXPcsqaDUengYgkic8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824540184423-9paok0s6v43l2lhqflm5k8qlji407uhk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Show_Products"
+    android:orientation="vertical"
+    android:background="#232736">
+
+
+    <LinearLayout
+        android:id="@+id/lL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="-130dp"
+        android:layout_below="@+id/lL"
+        android:background="@drawable/custom_button_02"
+        android:text="Refresh"></Button>
+    <Button
+        android:id="@+id/btn_searchProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/custom_button_02"
+        android:layout_below="@+id/btn_refresh"
+        android:text="Search Product">
+
+    </Button>
+
+</RelativeLayout>
+

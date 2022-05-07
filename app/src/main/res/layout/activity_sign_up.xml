@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232736"
+    tools:context=".SignUp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btn_profile_picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/relative_01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-15dp"
+        android:src="@drawable/mail_logo"
+        app:civ_border_color="@color/teal_700"
+        app:civ_border_width="3dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_above="@+id/btn_profile_picture"
+        app:srcCompat="@drawable/market_place_logo_2" />
+
+    <RelativeLayout
+        android:id="@+id/relative_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp">
+
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:backgroundTint="#0073FF"
+            android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+            android:hint="  Enter Full Name"
+            android:textColorHint="#555555">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_name"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_email"
+            android:backgroundTint="#0073FF"
+            android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+            android:hint="  Enter Email"
+            android:textColorHint="#555555">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/txt_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_email"
+            android:layout_marginTop="5dp"
+            android:text="Password"
+            android:textColor="@color/white"
+            android:textSize="15dp">
+
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_password"
+            android:backgroundTint="#0073FF"
+            android:drawableLeft="@drawable/ic_baseline_security_24"
+            android:hint="  Enter Password"
+            android:inputType="textPassword"
+            android:textColorHint="#555555">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/txt_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_password"
+            android:layout_marginTop="5dp"
+            android:text="Mobile"
+            android:textColor="@color/white"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_mobile"
+            android:backgroundTint="#0073FF"
+            android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+            android:hint="  Enter Mobile Number"
+            android:inputType="textPassword"
+            android:textColorHint="#555555">
+
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_01"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/btn_signup_2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_button_01"
+            android:text="SignUp "></Button>
+
+        <TextView
+            android:id="@+id/txt_backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_signup_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Already Have account? Login Now !"
+            android:textColor="@color/white"></TextView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

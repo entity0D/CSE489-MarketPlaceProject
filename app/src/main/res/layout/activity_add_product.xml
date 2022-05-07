@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232736"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/img_showImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="#1F3A55" />
+
+        <ImageView
+            android:id="@+id/img_addImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/img_showImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-15dp"
+            android:background="@drawable/ic_baseline_add_box_24">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_addImage"
+            android:layout_marginTop="20dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:backgroundTint="#0073FF"
+            android:hint="  Enter Product Name"
+            android:textColorHint="#555555"></EditText>
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_productName"
+            android:text="Price"
+            android:textColor="@color/white"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_price"
+            android:backgroundTint="#0073FF"
+            android:hint="  Enter Price"
+            android:inputType="number"
+            android:textColorHint="#555555">
+
+        </EditText>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_01"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_addProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_02"
+                android:text="Add Product" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
